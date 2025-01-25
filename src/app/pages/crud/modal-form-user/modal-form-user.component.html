@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <mat-icon class="float-end hover" (click)="closeModal()">close</mat-icon>
+
+    <h1 class="titulo"  *ngIf="editUser">Editar Utilizador</h1>
+    <h1 class="titulo"  *ngIf="!editUser">Cadastrar Utilizador</h1>
+    <h2 class="subtitulo">Preencha o formulário para adicionar um novo utilizador</h2>
+
+    <form class="row" [formGroup]="formUser">
+        <div class="col-12 col-md-6 mb-2">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Nome</mat-label>
+                <input type="text" matInput formControlName="name" placeholder="Digite o nome">
+                @if (formUser.controls['name'].invalid) {
+                  <mat-error>Por favor digite um nome válido</mat-error>
+                }
+              </mat-form-field>
+        </div>
+        <div class="col-12 col-md-6 mb-2">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>E-mail</mat-label>
+                <input type="email" matInput formControlName="email" placeholder="Digite o e-mail">
+                @if (formUser.controls['email'].invalid) {
+                  <mat-error>Por favor digite um e-mail válido</mat-error>
+                }
+              </mat-form-field>
+        </div>
+        <div class="col-12 col-md-6 mb-2">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Setor</mat-label>
+                <input type="text" matInput formControlName="sector" placeholder="Digite o setor">
+                @if (formUser.controls['sector'].invalid) {
+                  <mat-error>Por favor digite um setor válido</mat-error>
+                }
+              </mat-form-field>
+        </div>
+        <div class="col-12 col-md-6 mb-2">
+            <mat-form-field class="example-full-width w-100">
+                <mat-label>Cargo</mat-label>
+                <input type="text" matInput formControlName="role" placeholder="Digite o cargo">
+                @if (formUser.controls['role'].invalid) {
+                  <mat-error>Por favor digite um cargo válido</mat-error>
+                }
+              </mat-form-field>
+        </div>
+
+        <!--Benefits (select)-->
+        <div class="col-12 col-md-6 mb-2">
+            <mat-form-field class="w-100">
+                <mat-label> <mat-icon>favorite</mat-icon> Plano de Saúde</mat-label>
+                <mat-select formControlName="healthPlan">
+                  @for (plan of healthPlans; track plan) {
+                    <mat-option [value]="plan.descricao">{{plan.descricao}}</mat-option>
+                  }
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="col-12 col-md-6 mb-2">
+            <mat-form-field class="w-100">
+                <mat-label> <mat-icon>favorite</mat-icon> Plano Odontológico</mat-label>
+                <mat-select formControlName="dentalPlan">
+                  
+                    <mat-option *ngFor="let dplan of dentalPlans" [value]="dplan.descricao">{{dplan.descricao}}</mat-option>
+                  
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="col-12">
+            <button class="botao-primario float-end" [disabled]="!formUser.valid" (click)="saveUser()">Salvar Utilizador</button>
+        </div>
+
+    </form>
+
+
+</div>
