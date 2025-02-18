@@ -5,9 +5,10 @@
     float: left;
     background-image: url('../../../assets/background-login.png');
     background-color: var(--primary-color);
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
+    
 }
 
 .area-form{
@@ -53,8 +54,11 @@
    box-shadow: inset 1px 1px 2px #babecc80, inset -1px -1px 2px #d8d8d8b0;
    &:focus{
     border: 1px solid var(--primary-color);
+    
 
    }
+   
+   
 }
 
 .footer{

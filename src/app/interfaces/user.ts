@@ -5,5 +5,5 @@ export interface User {
     role: string,
     firebaseId?: string,
     healthPlan?: string,
-    dentalPlan?: string
+    dentalPlan?: string,
 }
