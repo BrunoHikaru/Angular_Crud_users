@@ -1,27 +1,35 @@
-# CrudUsuarios
+# **User Management System – Angular 17**  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+## **📌 Overview**  
+This is a **User Management System** built with **Angular 17**, designed to perform **CRUD operations (Create, Read, Update, Delete)** on user data. It features a **modern UI** built with **Bootstrap** and integrates **Firebase Firestore** for real-time database interactions.  
 
-## Development server
+🚀 *This project was created for learning and demonstration purposes and is not intended for production use.*  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## **🎯 Features**  
+✅ **Intuitive User Interface** – Built with Bootstrap for a clean and user-friendly experience.  
+✅ **Real-time Database** – Integrated with Firebase Firestore for seamless updates.  
+✅ **Fully Responsive Design** – Works across all devices and screen sizes.  
+✅ **CRUD Functionality** – Allows adding, editing, deleting, and viewing users.  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## **🛠️ Technologies Used**  
+- **Angular 17** – Front-end framework  
+- **Firebase Firestore** – NoSQL database for real-time interactions  
+- **Bootstrap** – Responsive and modern UI design  
+- **RxJS** – Reactive programming in Angular  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## **📌 Future Improvements**  
+- Add authentication for user management  
+- Implement role-based access control  
+- Enhance UI/UX with more animations and styling  
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## **💡 Connect With Me**  
+🔗 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/bruno-hikaru-kabashima-da-fonseca-273217214/))  
