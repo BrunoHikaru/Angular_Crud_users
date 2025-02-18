@@ -32,4 +32,4 @@ This is a **User Management System** built with **Angular 17**, designed to perf
 ---
 
 ## **💡 Connect With Me**  
-🔗 [LinkedIn]([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/bruno-hikaru-kabashima-da-fonseca-273217214/))  
+🔗 [LinkedIn]([https://www.linkedin.com/in/bruno-hikaru-kabashima-da-fonseca-273217214/])  
